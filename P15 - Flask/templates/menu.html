@@ -1,0 +1,24 @@
+<!-- file: menu.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Halaman Web Pribadi</title>
+        <link rel=stylesheet" href="{{url_for('static',filename='main.css')}}">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="logo">Menu Aplikasi Web Flask</h1>
+                <strong>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="{{url_for('home')}}">Home</a></li>
+                            <li><a href="{{url_for('about')}}">Profil</a></li>
+                        </ul>
+                    </nav>
+                </strong>
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!-- file: P11-1-Ajax.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>AJAX</title>
+        <script type="text/javascript">
+            function bukaDokumen() {
+                var xmlhttp;
+                if (window.XMLHttpRequest) {
+                    // menggunakan IE7+, Firefox, Chrome, Safari, Opera
+                    xmlhttp = new XMLHttpRequest();
+                }
+                else {
+                    //  menggunakan IE5, IE6
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                        document.getElementById("tulisan").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET","P11-isis-Ajax.html",true);
+                xmlhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="tulisan"><h2>Demo Penggunaan AJAX</h2></div>
+        <button onclick="bukaDokumen()">Ubah Tulisan Ini</button>
+    </body>
+</html>

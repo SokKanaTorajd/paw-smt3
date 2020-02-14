@@ -1,0 +1,124 @@
+body {
+    text-align: center;
+    color: white;
+    font-family: "Arial";
+}
+
+#wrapper {
+    width: 80%;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background: green;
+    /* background: #663300; */
+    border-bottom: 1px solid #FFF;
+}
+
+#middle {
+    background: transparent;
+}
+
+#sidebar {
+    width: 19%;
+    float: left;
+    border-right: 1px solid #FFF;
+}
+
+#content {
+    background: wheat;
+    height: 50%;
+}
+
+#clear {
+    clear: both;
+}
+
+#footer {
+    border-top: 1px solid #FFF;
+    height: 50px;
+    /* background: #330000; */
+    background: #9c958d;
+}
+
+/* navigation */
+
+#nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: green;
+    float: left;
+    text-align: left;
+}
+
+#nav li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+#nav a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 2;
+    border-bottom: 1px solid #FFF;
+}
+
+#nav a:hover {
+    background: #330000;
+}
+
+#topwrapper {
+    /* background: #330000; */
+    background: darkolivegreen;
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+}
+
+#topmenu {
+    /* background: #330000; */
+    background: darkolivegreen;
+    margin-left: 350px;
+    padding: 0;
+    height: 30px;
+    width: 50%;
+}
+
+#topmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topmenu ul li {
+    position: relative;
+    float: left;
+    width: 100px;
+}
+
+#topmenu li ul {
+    position: absolute;
+    display: none;
+}
+
+#topmenu ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    color: #FFF;
+    padding: 5px;
+}
+
+#topmenu ul li a:hover {
+    background: #663300;
+}
+
+#topmenu li:hover ul {
+    display: block;
+    background: #330000;
+}

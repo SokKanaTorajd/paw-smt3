@@ -1,0 +1,85 @@
+<!-- file: P03-Tugas-Form-182103010.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAW 03: Tugas Form 182103010</Form></title>
+        <style type="text/css">
+            label   {font-weight: bold}
+            legend  {font-style: italic}
+            fieldset {width: "500px"}
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Identitas Calon Mahasiswa</legend>
+                <table width="500px">
+                    <tr>
+                        <td colspan="3">
+                            <p><label for="nama">Nama Lengkap*</label><br>
+                            <input type="text" size="100px" name="nama"><br>
+                            <label>Masukkan nama lengkap Anda sesuai akte kelahiran yang berlaku</label></p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <p><label>Jenis Kelamin*</label><br>
+                            <input type="radio" name="kelamin" value="L">Laki-laki<br>
+                            <input type="radio" name="kelamin" value="P">Perempuan</p>
+                        </td>
+
+                        <td>
+                            <p><label>Tempat Lahir*</label><br>
+                            <input type="text" name="tempat"</p>
+                        </td>
+                        
+                        <td>
+                            <p><label>Tanggal Lahir*</label><br>
+                            <input type="text" name="tanggal"</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p><label>Agama*</label><br>
+                                <select size="1">
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katolik">Katolik</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Hindu">Hindu</option>
+                                </select></p>
+                        </td>
+                        
+                        <td>
+                            <p><label>Kewarganegaraan*</label><br>
+                            <select name="negara">
+                                <option value="IDN">Indonesia</option>
+                                <option value="MLY">Malasysia</option>
+                                <option value="SGP">Singapore</option>
+                                <option value="THA">Thailand</option>
+                            </select></p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">
+                            <p><label>Alamat Lengkap*</label><br>
+                            <textarea rows="4" cols="75px" name="alamat"></textarea></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" value="Proses" name="isian">
+                        </td>
+                        <td>
+                            <input type="reset" value="Hapus">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

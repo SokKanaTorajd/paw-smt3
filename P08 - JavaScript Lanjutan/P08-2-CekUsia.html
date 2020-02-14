@@ -1,0 +1,32 @@
+<!-- file: P08-2-CekUSia.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript: Cek Usia</title>
+        <script type="text/javascript">
+            function konfirmusia() {
+                if (document.isian.usia.value != "") {
+                    var usianya = document.isian.usia.value;
+                    if (usianya < 17)
+                        alert("Maaf, anda belum  terlalu dewasa");
+                    else
+                        alert("Anda sudah cukup dewasa");}
+                else
+                    alert("Anda belum mengisi Usia");}        
+        </script>
+    </head>
+    <body>
+        <form name="isian" method="POST">
+            <fieldset>
+                <legend>Isian Form</legend>
+                <label for="usia">Usia Anda</label><br>
+                <input name="usia" class="text" type="textbox">
+            </fieldset>
+            <fieldset class="button">
+                <input name="submit" type="submit" value="OK" onclick="konfirmusia()"/>
+                <input name="reset" type="reset" value="Reset"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

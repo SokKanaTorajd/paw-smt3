@@ -1,0 +1,4 @@
+C:\WINDOWS\system32>npm install -g eslint
+[  ................] | fetchMetadata: sill resolveWithNewModule callsites@3.1.0 checking iC:\Users\acer\AppData\Roaming\npm\eslint -> C:\Users\acer\AppData\Roaming\npm\node_modules\eslint\bin\eslint.js
++ eslint@6.6.0
+added 123 packages from 83 contributors in 75.64s

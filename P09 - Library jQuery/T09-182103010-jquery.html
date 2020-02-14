@@ -1,0 +1,97 @@
+<!-- file: T09-182103010-jquery.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>T09: 182103010-Tugas jQuery</title>
+        <script src="jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#deskripsi").hide();
+                $("#spesifikasi").hide();
+                $("#review").hide();
+                $("#desc").click(function(){
+                    $("#deskripsi").slideToggle("slow");
+                });
+                $("#spec").click(function(){
+                    $("#spesifikasi").fadeToggle("slow");
+                });
+                $("#rev").click(function(){
+                    $("#review").fadeToggle("slow");
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            var gbrslideshow = new Array(); 
+            gbrslideshow[0] = new Image(); 
+            gbrslideshow[0].src = "note9.jpg"; 
+            gbrslideshow[1] = new Image();
+            gbrslideshow[1].src = "note9_2.jpg";
+            gbrslideshow[2] = new Image();
+            gbrslideshow[2].src = "note9_3.jpg";
+            gbrslideshow[3] = new Image();
+            gbrslideshow[3].src = "note9_4.jpg";
+            gbrslideshow[4] = new Image();
+            gbrslideshow[4].src = "note9_5.jpg";
+        </script>
+        <style type="text/css">
+            h2 {
+                text-align: center;
+            }
+            #gambar {
+                height: 300px;
+                width: 250px;
+                margin: 0 auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Samsung Galaxy Note 9</h2>
+        <img src="" id="gambar"/><br>
+        <script type="text/javascript">
+            var urut = 0;
+            var jeda = 2000;
+            var jumlahimage = gbrslideshow.length - 1;   
+            function SlideShowImage() {
+                if (!document.images) return;
+                document.getElementById('gambar').src = gbrslideshow[urut].src
+                if (urut < jumlahimage)
+                    urut++;
+                else
+                    urut=0;
+                // pergantian image setiap jead
+                setTimeout("SlideShowImage()", jeda);
+            }
+            SlideShowImage();
+        </script>
+        <button id="desc">Pengenalan</button>
+        <button id="spec">Spesifikasi</button>
+        <button id="rev">Review</button>
+        <p id="deskripsi">
+            <strong>Deskripsi:</strong> <br>
+            Smartphone Samsung Galaxy Note 9 menghadirkan desain yang sangat dinamis dan juga memiliki tingkat fleksibilitas yang tinggi.
+            Selain memiliki tampilan fisik yang sangat modern, perangkat ini hadir dengan tenaga optimal untuk menghadirkan kualitas prima 
+            sebuah handphone cerdas. Bandrol harga Smartphone Samsung Galaxy Note 9 juga ternyata masih tergolong murah untuk 
+            kelas menengah atas dan masih sangat terjangkau. HP ini juga menjadi icon masyarakat urban dengan hadirnya fitur kamera. 
+            Untuk harga Smartphone Samsung Galaxy Note 9 yang relatif murah, tersedia fitur kamera 16 MP di dalamnya dengan kualitas 
+            gambar tajam dengan resolusi hingga 4616 x 3465 pixel serta kamera depan berukuran 8 MP yang sudah dilengkapi dengan 
+            LED flash light. 
+        </p>
+        <p id="spesifikasi">
+            <strong>Spesifikasi: </strong><br>
+            Network: 2G/3G/4G<br>
+            Android: 8.0 (Oreo)<br>
+            Prosesor: Exynos 8895<br>
+            RAM: 6 GB<br>
+            Internal: 128 GB<br>
+        </p>
+        <p id="review">
+            <strong>Review: </strong><br>
+            Samsung Galaxy Note9 masih mengadopsi layar penuh tanpa poni seperti pada Note8. 
+            Satu hal yang paling membedakan Note9 dengan Note8 adalah lokasi sensor sidik jari yang kini di bawah lensa kamera belakang. 
+            Walaupun cukup mepet dengan lensa, sensor sidik jarinya kini lebih mudah diakses tanpa melihat. 
+            Jadi tidak ada lagi cerita salah pencet yang mengakibatkan lensa kamera belakang seperti Note8 yang mudah kotor 
+            akibat terkena sapuan jari.
+        </p>
+    </body>
+</html>

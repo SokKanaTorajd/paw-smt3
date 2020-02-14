@@ -1,0 +1,23 @@
+<!-- file: P09-1-jquery.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>P09-1: Contoh jQuery</title>
+        <script src="../P09 - Library jQuery/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").hide("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Aplikasi jQuery Sederhana</h2>
+        <p>jQuery adalah Library JavaScript dan jQuery menyediakan fungsi UI yang menarik.
+            Baris ini akan disembunyikan oleh jQuery.
+        </p>
+        <button>Sembunyikan</button>
+    </body>
+</html>

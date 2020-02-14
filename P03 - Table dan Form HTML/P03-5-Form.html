@@ -1,0 +1,36 @@
+<!-- file: P03-5-Form.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAW 03-5: Form</Form></title>
+        <style type="text/css">
+            label   {font-weight: bold}
+            legend  {font-style: italic}
+            fieldset {width: 200px}
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Alamat</legend>
+                <p><label for="alamat">Alamat Lengkap</label><br>
+                <textarea rows="4" cols="20" name="alamat"></textarea></p>
+                <p><label for="kota">Kota Asal</label><br>
+                <select size="1" name="kota">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select></p>
+                <p><label for="hobi_baca">Hobi</label><br>
+                <input type="checkbox" name="hobi_baca" value="baca">Membaca<br>
+                <input type="checkbox" name="hobi_main" value="main">Bermain</p>
+                <p><label for="kelamin">Jenis Kelamin</label><br>
+                <input type="radio" name="kelamin" value="L">Laki-laki<br>
+                <input type="radio" name="kelamin" value="P">Perempuan</p>
+                <input type="submit" value="Proses" name="isian">
+                <input type="reset" value="Hapus">
+            </fieldset>
+        </form>
+    </body>
+</html>

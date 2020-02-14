@@ -1,0 +1,21 @@
+<!-- file: P07-1-Elemen.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>P07-1: Mengganti Elemen HTML</title>
+        <script type="text/javascript">
+            function GantiIsi() {
+                x = document.getElementById("paragraf");
+                x.innerHTML = "<strong>Paragraf telah diganti isinya.</strong>";
+            }
+        </script>
+    </head>
+    <body>
+        <p id="paragraf">
+            Paragraf ini adalah contoh elemen HTML DOM. 
+            Isi paragraf ini akan diganti setelah tombol di bawah ini diklik 
+        </p>
+        <input type="Button" onclick="GantiIsi()" value="Ubah Tulisan" />
+    </body>
+</html>

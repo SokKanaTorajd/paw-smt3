@@ -1,0 +1,82 @@
+<!-- file: T08 - JavaScript Lanjutan - 182103010.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tugas Praktikum 08 - 182103010</title>
+        <script type="text/javascript">
+            window.setTimeout("Waktu()",1000);
+            function Waktu() {
+                var waktu = new Date();
+                document.getElementById("jam").innerHTML = waktu.getHours()+":"+ waktu.getMinutes() + ":" + waktu.getSeconds();
+                setTimeout("Waktu()",1000);
+            }
+
+            function CekNama() {
+                if (document.isian.nama.value == "")
+                    alert("Anda belum mengisi Nama");
+            }
+
+            function CekNIM() {
+                if (document.isian.nim.value == "")
+                    alert("Anda belum mengisi NIM");
+            }
+
+            function CekAngkatan() {
+                if (document.isian.angkatan.value != "") {
+                    var tahun = document.isian.angkatan.value;
+                    if (tahun < 2015)
+                        alert("Anda terlambat lulus");
+                    else if (tahun == 2015 || tahun == 2016)
+                        alert("Segera persiapkan kelulusan Anda");
+                    else if(tahun == 2017)
+                        alert("Anda telah melewati 2 tahun di kampus ini");}
+                else 
+                    alert("Anda belum mengisi tahun angkatan");
+            }
+
+            function CekAlamat() {
+                if (document.isian.alamat.value == "")
+                    alert("Anda belum mengisi alamat");
+            }
+            function TampilData() {
+                var nama = document.isian.nama.value;
+                var nim = document.isian.nim.value;
+                var angkatan = document.isian.angkatan.value;
+                var alamat = document.isian.alamat.value;
+                if((nama != "" ) && (nim != "") && (angkatan != "") && (alamat != ""))
+                    alert("Berikut data anda: \nNama:"+ nama + "\nNIM:" + nim + "\nTahun Angkatan:" + angkatan + "\nAlamat:" + alamat +"\nTerima Kasih telah mengisi formulir!")
+            }
+        </script>
+    </head>
+    <body>
+        <p> Sekarang Jam: <div id="jam"></div> </p>
+        <form name="isian" method="POST">
+            <fieldset>
+                <legend>Isikan Data Anda</legend>
+                <ul>
+                    <li>
+                        <label for="nama">Nama Lengkap</label><br>
+                        <input name="nama" class="text" type="text" onblur="CekNama()">
+                    </li>
+                    <li>
+                        <label for="nim">NIM</label><br>
+                        <input name="nim" class="text" type="text" onblur="CekNIM()">
+                    </li>
+                    <li>
+                        <label for="angkatan">Tahun Angkatan</label><br>
+                        <input name="angkatan" class="text" type="text" onblur="CekAngkatan()">
+                    </li>
+                    <li>
+                        <label for="alamat">Alamat</label><br>
+                        <input name="alamat" class="text" type="class" onblur="CekAlamat()">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="button">
+                <input name="submit" type="submit" value="Simpan" onclick="TampilData()" />
+                <input name="reset" type="reset" value="Reset"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

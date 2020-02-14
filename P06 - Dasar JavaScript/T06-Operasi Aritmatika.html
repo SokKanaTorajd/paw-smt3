@@ -1,0 +1,34 @@
+<!-- file: T06-Operasi Aritmatika.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tugas Operasi Aritmatika menggunakan JavaScript</title>
+        <script type="text/javascript">
+            function Pengurangan() {
+                bil1 = prompt("Angka Pertama");
+                bil2 = prompt("Angka Kedua");
+                hasil = bil1 - bil2;
+                alert("hasil pengurangan "+bil1+" dikurangi "+bil2+" sama dengan "+hasil);
+            }
+            function Perkalian() {
+                bil1 = prompt("Angka Pertama");
+                bil2 = prompt("Angka Kedua");
+                hasil = bil1 * bil2;
+                alert("hasil perkalian "+bil1+" dikali "+bil2+" sama dengan "+hasil);
+            }
+            function Pembagian() {
+                bil1 = prompt("Angka Pertama");
+                bil2 = prompt("Angka Kedua");
+                hasil = bil1 / bil2;
+                alert("hasil pembagian "+bil1+" dibagi "+bil2+" sama dengan "+hasil);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Taufaldisatya W.D / 182103010 / Sistem Informasi</h3>
+        <input type="button" onclick="Pengurangan()" value="Kurang" />
+        <input type="button" onclick="Perkalian()" value="Kali" />
+        <input type="button" onclick="Pembagian()" value="Bagi" />
+    </body>
+</html>

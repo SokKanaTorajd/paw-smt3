@@ -1,0 +1,19 @@
+/* file: P04-style-1.css */
+body{
+    font-family: Verdana;
+    font-size: 11pt;
+    color: grey;
+    padding: 10px;
+}
+
+h2{
+    font-family: Tahoma;
+    font-size: 16pt;
+    color: green;
+}
+
+h3{
+    font-family: Tahoma;
+    font-size: 14pt;
+    color: blue;
+}

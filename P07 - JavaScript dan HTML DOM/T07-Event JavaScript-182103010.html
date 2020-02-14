@@ -1,0 +1,31 @@
+<!-- file: T07-Event JavaScript-182103010.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tugas Praktikum Event JavaScript</title>
+        <script type="text/JavaScript">
+            function gantiwarna(warna) {
+                document.getElementById("teks").style.color = warna;
+            }
+            function sembunyi() {
+                document.getElementById("gambar").style.visibility = "Hidden";
+            }
+            function tampil() {
+                document.getElementById("gambar").style.visibility = "visible";
+            }
+            function gantigambar(gambar) {
+                x = document.getElementById("gambar");
+                x.src = gambar;
+            }
+        </script>
+    </head>
+
+    <body>
+        <p id="teks" onmouseover="gantiwarna('red')" onmouseout="gantiwarna('black')">Mengubah Gambar</p>
+        <input type="button" onclick="sembunyi()" value="Sembunyikan" />
+        <input type="button" onclick="tampil()" value="Tampilkan"/><br>
+        <img id="gambar" src="sw.jpg" onmouseover="gantigambar('spiderman.jpg')" onmouseout="gantigambar('sw.jpg')"><br>
+        <p>Taufaldisatya W.D / 182103010 / Sistem Informasi</p>
+    </body>
+</html>

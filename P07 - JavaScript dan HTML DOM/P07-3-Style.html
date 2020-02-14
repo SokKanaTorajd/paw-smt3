@@ -1,0 +1,27 @@
+<!-- file: P07-3-Style.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>P07-3: Mengganti Style</title>
+        <script>
+            function GantiStyle() {
+                document.getElementById("teks").style.color = "red";
+            }
+            function Sembunyi() {
+                document.getElementById("teks").style.visibility = "Hidden";
+            }
+            function Tampil() {
+                document.getElementById("teks").style.visibility = "visible";
+            }
+        </script>
+    </head>
+    <body>
+        <p id="teks">
+            Tulisan ini berwarna hitam. Tulisan ini dapat berganti warna dan disembunyikan
+        </p>
+        <input type="button" onclick="GantiStyle()" value="Ubah Style"/>
+        <input type="button" onclick="Sembunyi()" value="Sembunyikan"/>
+        <input type="button" onclick="Tampil()" value="Tampilkan"/>
+    </body>
+</html>

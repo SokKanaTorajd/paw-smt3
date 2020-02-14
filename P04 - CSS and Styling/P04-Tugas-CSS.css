@@ -1,0 +1,56 @@
+/* Taufaldisatya Wijatama Diwangkara */
+/* Sistem Informasi : 182013010 */
+
+body{
+    background-image: url("new-bg.jpg");
+}
+.h2 {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+}
+
+.p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
+
+caption {
+    font-size: 16pt;
+    font-family: 'Lucida Sans' ;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    width: 49%;
+    margin: 1px;
+  }
+  
+table th {
+    column-span: 3;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    background-color: #6666ff;
+  }
+  
+table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+form{
+    align-self: center;
+}
+fieldset{
+    align-self: center;
+    width: 75%;
+    background-color: aqua;
+
+}
+
+label {
+    width: 10px;
+    height: 5px;
+}

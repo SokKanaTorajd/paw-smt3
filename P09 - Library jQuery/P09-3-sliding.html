@@ -1,0 +1,39 @@
+<!-- file: P09-3-sliding.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>P09-3: Sliding jQuery</title>
+        <script src="../P09 - Library jQuery/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+        <style type="text/css">
+            #panel, #flip {
+                width: 500px;
+                padding: 15px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+            }
+            #panel {
+                padding: 15px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Fungsi Slide Toggle</h2>
+        <p>
+            Fungsi slideToggle akan menyembunyikan dan menampilkan sebuah elemen dengan metode sliding atau penggeseran.
+        </p>
+        <div id="flip">Tekan disini untuk slide panel</div>
+        <div id="panel">Bagian ini akan disembunyikan dan ditampilkan secara sliding, dengan bantuan jQuery.
+            slideToggle adalah fungsi sliding yang telah built-in dalam jQuery.
+        </div>
+    </body>
+</html>

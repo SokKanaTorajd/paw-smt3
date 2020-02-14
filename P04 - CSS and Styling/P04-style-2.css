@@ -1,0 +1,32 @@
+/* file: P04-style-2.css */
+
+body{
+    background: rgb(200,200,200);
+    color: white; padding: 20px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h2{
+    background-color: darkcyan;
+    text-shadow: 2px 2px 3px #000000;
+    padding: inherit;
+}
+
+h3{
+    background-color: #ee3e80;
+    padding: inherit;
+}
+
+p{
+    background-color: white;
+    color: rgb(100, 100, 90);
+    padding: inherit;
+}
+
+a{
+    text-decoration: none; color: red;
+}
+
+a.hover{
+    text-decoration: underline; color: orange;
+}

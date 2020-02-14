@@ -1,0 +1,40 @@
+<!-- file: P04-4-CSS-Tabel -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PAW 04-4: CSS Form</title>
+        <style>
+            body{width: 500px;}
+            input[type=text] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: solid pink 2px;
+                border-radius: 4px;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input:focus {
+                border: solid green 2px;
+                background-color: teal;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="nama">Nama Lengkap Anda</label>
+            <input type="text" name="nama">
+            <label for="umur">Umur Anda</label>
+            <input type="text" name="umur">
+            <input type="submit" value="Simpan">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!-- file: P07-2-Atribut.html  -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            P07-02: Mengganti Atribut HTML
+        </title>
+        <script type="text/javascript">
+            function GantiGambar() {
+                x = document.getElementById("gambar");
+                x.src = "../P04 - CSS and Styling/background.jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <img id="gambar" src="../P04 - CSS and Styling/unjani.jpg" width="400" height="300"><br>
+        <input type="button" onclick="GantiGambar()" value="Ubah Gambar">
+    </body>
+</html>
